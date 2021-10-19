@@ -1,4 +1,4 @@
 ActiveAdmin.register Province do
-  menu parent: ['Settings','Addresses']
+  menu false
   permit_params :region_id, :name, :code
 end

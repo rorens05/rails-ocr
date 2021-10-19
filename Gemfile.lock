@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/faker-ruby/faker.git
-  revision: d369a567f96f164cc3664263a3b9673696a3469d
+  revision: f160a89366404cfd8ac6ea7c45bb64c61c0dd74b
   branch: master
   specs:
     faker (2.19.0)
@@ -92,17 +92,17 @@ GEM
       jquery-rails
     awesome_print (1.9.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.515.0)
-    aws-sdk-core (3.121.1)
+    aws-partitions (1.516.0)
+    aws-sdk-core (3.121.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
-    aws-sdk-kms (1.49.0)
-      aws-sdk-core (~> 3, >= 3.120.0)
+    aws-sdk-kms (1.50.0)
+      aws-sdk-core (~> 3, >= 3.121.2)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.103.0)
-      aws-sdk-core (~> 3, >= 3.120.0)
+    aws-sdk-s3 (1.104.0)
+      aws-sdk-core (~> 3, >= 3.121.2)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.4)
     aws-sigv4 (1.4.0)
@@ -265,7 +265,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redis (4.4.0)
+    redis (4.5.1)
     regexp_parser (2.1.1)
     rename (1.0.8)
       activesupport
@@ -282,7 +282,7 @@ GEM
       rubyzip (>= 1.3.0, < 3.0.0)
     rtesseract (3.1.2)
     ruby2_keywords (0.0.5)
-    rubyzip (1.3.0)
+    rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -327,9 +327,10 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (2.4.0)
+    webdrivers (4.7.0)
       nokogiri (~> 1.6)
-      rubyzip (~> 1.0)
+      rubyzip (>= 1.3.0)
+      selenium-webdriver (> 3.141, < 5.0)
     webpacker (4.3.0)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)

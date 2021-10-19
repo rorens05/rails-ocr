@@ -7,43 +7,7 @@ Rails.application.routes.draw do
   resources :game_records
   mount ActionCable.server => '/cable'
 
-  resources :messages
-  resources :streaming_rooms do
-    member do
-      get :viewers
-      get :chats
-      get :gifts
-    end
-  end
-  resources :playmates do
-    member do
-      get :conversations
-      get :exclusive_contents
-      get :streams
-    end
-  end
-  resources :billing_addresses
-  resources :buyers do
-    end
-  resources :option_items
-  resources :option_groups do
-    end
-  resources :variations
-  resources :products do
-        member do
-      post :upload_image
-      post :add_tags
-      delete :delete_tag
-      delete :delete_image
-    end
-  end
-  resources :categories
-  resources :merchants do
-      member do
-      post :upload_image
-      delete :delete_image
-    end
-  end
+  
   resources :users, path: 'user' do
     member do
       patch :toggle_verification
@@ -62,6 +26,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v2 do
+      post 'ocr/index'
       get 'auth/connection_test'
       post 'auth/login'
       post 'auth/login_with_facebook'

@@ -1,5 +1,5 @@
 ActiveAdmin.register_page "Tests" do
-  menu priority: 1, label: "Tests"
+  menu false
 
   content title: "Tests" do
     div class: "blank_slate_container", id: "dashboard_default_message" do
