@@ -37,7 +37,7 @@ services:
     restart: always
     build: .
     ports:
-      - 5000:3000
+      - 6000:3000
     working_dir: /app
     volumes:
       - ./:/app
