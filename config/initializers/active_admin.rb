@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "RORENS"
+  config.site_title = "THR"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -219,7 +219,7 @@ ActiveAdmin.setup do |config|
   #   config.register_stylesheet 'my_print_stylesheet.css', media: :print
   #
   # To load a javascript file:
-  #   config.register_javascript 'my_javascript.js'
+  config.register_javascript 'https://cdn.jsdelivr.net/npm/optiic@latest/dist/index.min.js'
 
   # == CSV options
   #
@@ -318,7 +318,7 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-  config.footer = 'Manila Broadcasting Company PaPremyo App 2021'
+  config.footer = 'THR 2021'
 
   # == Sorting
   #

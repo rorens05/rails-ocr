@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
+
+# Convert image to text
+gem 'rtesseract'
 # datetime picker for active admin
 gem 'active_admin_datetimepicker'
 # Select2 for better select
